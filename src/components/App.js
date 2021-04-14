@@ -5,14 +5,11 @@ import PropTypes from 'prop-types';
 function App(props) {
   return (
     <div className="App">
-      <h1>Weather App </h1>
+      <h1>Weather App</h1>
       <LocationDetails city={props.location.city} country={props.location.country}/>
     </div>
   );
 }
-
-
-
 
 export default App;
 
