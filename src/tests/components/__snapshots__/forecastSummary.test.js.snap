@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forecast Summary renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+  >
+    <div
+      class="forecast-summary__date"
+    >
+      111111
+    </div>
+    <div
+      class="forecast-summary__icon"
+    >
+      stub icon
+    </div>
+    <div
+      class="forecast-summary__temperature"
+    >
+      [object Object]
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      stub prop description
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ForecastSummary renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+  >
+    <div
+      class="forecast-summary__date"
+    />
+    <div
+      class="forecast-summary__icon"
+    />
+    <div
+      class="forecast-summary__temperature"
+    />
+    <div
+      class="forecast-summary__description"
+    />
+  </div>
+</DocumentFragment>
+`;
