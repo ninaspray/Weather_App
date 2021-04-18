@@ -6,7 +6,7 @@ describe("ForecastSummary", () => {
   const validProps = {
     date: 123,
     description: "Mock Stub description",
-    icon: "stubIcon",
+    icon: "800",
     temperature: {
       min: 2,
       max: 52,
