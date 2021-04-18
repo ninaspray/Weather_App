@@ -1,7 +1,7 @@
 import React from 'react';
 import LocationDetails from './LocationDetails';
 import PropTypes from 'prop-types';
-import ForecastSummaries from './LocationDetails';
+import ForecastSummaries from './ForecastSummaries';
 
 const App = ({ forecasts, location }) => {
   return (
