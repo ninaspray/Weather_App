@@ -23,7 +23,7 @@ export default ForecastSummaries;
 ForecastSummaries.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
-      data: PropTypes.number,
+      date: PropTypes.number,
       description: PropTypes.string,
       icon: PropTypes.string,
       temperature: PropTypes.shape({
