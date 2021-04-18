@@ -8,7 +8,22 @@ describe("App", () => {
       city: "MockCity",
       country: "MockCountry",
     },
-    forecasts: [],
+    forecasts:[
+        {
+        description: "Light Rain - Mock Data",
+        icon: "500",
+        date: 123456,
+        humidity: 30,
+        temperature: {
+          min: 2,
+          max: 52,
+        },
+        wind: {
+            speed: 5,
+            direction: "w",
+        },
+    },
+    ],
     };
 
     render(<App forecasts={validProps.forecasts} location={validProps.location} />);

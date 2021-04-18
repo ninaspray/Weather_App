@@ -7,7 +7,7 @@ const ForecastDetails = ({ forecast }) => {
 
    return (
        <div className="forcast-details">
-           <p className="forecast-details-date">
+           <p className="forecast-details_date">
                {moment(date).format("ddd Do MMM")}
            </p>
            <p className="forecast-detail_temp">
