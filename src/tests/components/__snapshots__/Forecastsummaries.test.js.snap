@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastSummaries renders the stub data correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summaries"
+  >
+    <div
+      class="forecast-summary"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Thu 1st Jan
+      </div>
+      <div
+        class="forecast-summary__icon"
+        data-testid="forecast-icon"
+      >
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        30°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        stub mock 1
+      </div>
+    </div>
+    <div
+      class="forecast-summary"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Thu 1st Jan
+      </div>
+      <div
+        class="forecast-summary__icon"
+        data-testid="forecast-icon"
+      >
+        <i
+          class="wi wi-day-storm-showers"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        20°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        stub mock 2
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
