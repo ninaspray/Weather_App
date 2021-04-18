@@ -1,7 +1,6 @@
 import React from "react";
 import moment from "moment";
-import ForecastSummary from "./ForecastSummary";
-import PropTypes from "prop-types;"
+import PropTypes from "prop-types";
 
 const ForecastDetails = ({ forecast }) => {
    const { date, humidity, temperature, wind } = forecast;
@@ -31,7 +30,6 @@ const ForecastDetails = ({ forecast }) => {
            </p>
        </div>
    );
-
 };
 
 export default ForecastDetails;
@@ -48,5 +46,5 @@ ForecastDetails.propTypes = {
             speed: PropTypes.number,
             direction: PropTypes.string,
           }),
-        }).isRequired,
-      };
+   }).isRequired,
+ };
