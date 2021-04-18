@@ -2,14 +2,14 @@ import React from 'react';
 import LocationDetails from './LocationDetails';
 import PropTypes from 'prop-types';
 
-function App(props) {
+const App = (props) => {
+  const { location } = props;
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <LocationDetails city={props.location.city} country={props.location.country}/>
+      <LocationDetails city={location.city} country={location.country} />
     </div>
   );
-}
+};
 
 export default App;
 
