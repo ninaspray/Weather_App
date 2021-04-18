@@ -3,9 +3,12 @@ import LocationDetails from './LocationDetails';
 import PropTypes from 'prop-types';
 import ForecastSummaries from './ForecastSummaries';
 
+//import CSS
+import '../styles/App.css';
+
 const App = ({ forecasts, location }) => {
   return (
-    <div className="App">
+    <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
       <ForecastSummaries forecasts={forecasts} />
     </div>
