@@ -4,12 +4,12 @@ import ForecastSummary from "../../components/ForecastSummary";
 
 describe("ForecastSummary", () => {
   const validProps = {
-    date: 1111111,
-    description: "Stub description",
+    date: 123,
+    description: "Mock Stub description",
     icon: "stubIcon",
     temperature: {
-      min: 12,
-      max: 22,
+      min: 2,
+      max: 52,
     },
   };
 
@@ -36,11 +36,11 @@ describe("ForecastSummary", () => {
       />
     );
 
-    expect(getByText("1111111")).toHaveClass("forecast-summary__date");
-    expect(getByText("Stub description")).toHaveClass(
+    expect(getByText("123")).toHaveClass("forecast-summary__date");
+    expect(getByText("Mock Stub description")).toHaveClass(
       "forecast-summary__description"
     );
     expect(getByTestId("forecast-icon")).toHaveClass("forecast-summary__icon");
-    expect(getByText("22°C")).toHaveClass("forecast-summary__temperature");
+    expect(getByText("52°C")).toHaveClass("forecast-summary__temperature");
   });
 });

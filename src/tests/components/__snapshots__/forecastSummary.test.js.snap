@@ -8,7 +8,7 @@ exports[`ForecastSummary renders correctly 1`] = `
     <div
       class="forecast-summary__date"
     >
-      1111111
+      123
     </div>
     <div
       class="forecast-summary__icon"
@@ -19,12 +19,12 @@ exports[`ForecastSummary renders correctly 1`] = `
     <div
       class="forecast-summary__temperature"
     >
-      22°C
+      52°C
     </div>
     <div
       class="forecast-summary__description"
     >
-      Stub description
+      Mock Stub description
     </div>
   </div>
 </DocumentFragment>
