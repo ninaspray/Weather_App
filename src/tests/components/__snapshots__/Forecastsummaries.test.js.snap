@@ -19,7 +19,7 @@ exports[`ForecastSummaries renders the stub data correctly 1`] = `
         data-testid="forecast-icon"
       >
         <i
-          class="wi wi-day-sunny"
+          class="wi wi-day-rain"
           name="owm"
         />
       </div>
@@ -31,8 +31,13 @@ exports[`ForecastSummaries renders the stub data correctly 1`] = `
       <div
         class="forecast-summary__description"
       >
-        stub mock 1
+        Light Rain
       </div>
+      <button
+        type="button"
+      >
+        More Details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -60,8 +65,13 @@ exports[`ForecastSummaries renders the stub data correctly 1`] = `
       <div
         class="forecast-summary__description"
       >
-        stub mock 2
+        Thunderstorm
       </div>
+      <button
+        type="button"
+      >
+        More Details
+      </button>
     </div>
   </div>
 </DocumentFragment>
