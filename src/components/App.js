@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import LocationDetails from './LocationDetails';
-import PropTypes from 'prop-types';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
+import axios from 'axios';
 
 // Temp Disbale Eslint
 //* eslint-disable  no-unused-vars *
@@ -11,10 +11,13 @@ import ForecastDetails from './ForecastDetails';
 import '../styles/App.css';
 
 
-const App = ({ forecasts, location }) => {
-  const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
-  const selectedForecast = forecasts.find(
-  forecast => forecast.date === selectedDate);
+const App = () => {
+const [forecasts, setForecast] = useState([]);
+const [location, setLocation] = useState({city: "", country: ""});
+const [selectedDate, setSelectedDate] = useState(0);
+const selectedForecast = forecasts.find(
+  (forecast) => forecast.date === selectedDate
+);
 
 const handleForecastSelect = (date) => {
   setSelectedDate(date);
@@ -27,27 +30,29 @@ const handleForecastSelect = (date) => {
       forecasts={forecasts} 
       onForecastSelect={handleForecastSelect}
       />
-      <ForecastDetails forecast={selectedForecast}/>
+      {selectedForecast && <ForecastDetails forecast={selectedForecast}/>}
     </div>
   );
 };
 
 export default App;
 
-App.propTypes = {
-  forecasts: PropTypes.arrayOf(
-    PropTypes.shape({
-      date: PropTypes.number,
-      description: PropTypes.string,
-      icon: PropTypes.string,
-      tempreture: PropTypes.shape({
-        max: PropTypes.number,
-        min: PropTypes.number,
-      }),
-    })
-  ).isRequired,
-  location: PropTypes.shape({
-    city: PropTypes.string,
-    country: PropTypes.string,
-  }).isRequired,
-};
+
+//No longer using prop type as app no longer recieves any props. 
+// App.propTypes = {
+//   forecasts: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       date: PropTypes.number,
+//       description: PropTypes.string,
+//       icon: PropTypes.string,
+//       tempreture: PropTypes.shape({
+//         max: PropTypes.number,
+//         min: PropTypes.number,
+//       }),
+//     })
+//   ).isRequired,
+//   location: PropTypes.shape({
+//     city: PropTypes.string,
+//     country: PropTypes.string,
+//   }).isRequired,
+// };
