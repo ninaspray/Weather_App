@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LocationDetails from './LocationDetails';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
+import getForecast from '../requests/getForecast';
 import axios from 'axios';
 
 // Temp Disbale Eslint
@@ -22,6 +23,10 @@ const selectedForecast = forecasts.find(
 const handleForecastSelect = (date) => {
   setSelectedDate(date);
 };
+
+useEffect(() => {
+  getForecast(setSelectedDate, setForecast, setLocation);
+}, []);
 
   return (
     <div className="weather-app">
